@@ -1,0 +1,22 @@
+软件开发进展：
+根据kunlun ASIC设计目前初步完成minicode整体框架，可以兼容：
+1.  Armv7a -        Cortex-A7 （32bit）
+2.  Armv7m -        Cortex-M4（32bit）
+3.  Armv7r -        Cortex-R5（32bit）
+4.  Armv8a32 -      Cortex-A53/55/75 （32bit）
+5.  Armv8a64 -      Cortex-A53/55/75 （64bit）
+
+
+目前可以编译三颗芯片：
+1， AP chip（domain）:   Armv8a64, 4 core A55
+2， secure chip（domain）:  Cortex-R5 ,  dual core R5
+3,  safety chip（domain）：Cortex-R5 ,  single core R5
+
+
+已经集成：
+1， perf test相关工具。（cpu/ddr/benchmark）。
+
+近期目标:
+1,  GIC400/MMU/ARCH TIMER驱动集成。
+2， power/reset/clock/muli core框架整理。
+3， 自研IP/第三方IP 驱动/spec release后driver/testcode集成进minicode。（比如DPU650/SMMU/VPU/secure engine etc）

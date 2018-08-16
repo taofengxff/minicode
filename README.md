@@ -1,2 +1,1 @@
-# minicode
-minicode for fpga test
+Init: semidrive fpga test project
